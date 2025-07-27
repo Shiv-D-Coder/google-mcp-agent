@@ -83,6 +83,7 @@ Fetches recently read (non-unread) emails from the inbox.
 Retrieves a list of emails from the Gmail spam folder with minimal metadata.
 
 📂 Google Drive Tools
+
 🔹 list_my_drive_files(limit: int = 10)
 Returns a list of recent files in the user's Google Drive, including ID, name, MIME type, and last modified time.
 
