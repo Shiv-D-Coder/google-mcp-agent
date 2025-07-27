@@ -64,6 +64,7 @@ Add this block to your `msp.json` or equivalent MCP config to run the main serve
         ]
       }
 }
+```
 
 🧰 Available Tools (Exposed via FastMCP)
 These tools are registered with FastMCP and can be used directly by your copilot system or any agent pipeline.
