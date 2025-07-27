@@ -86,6 +86,7 @@ Retrieves a list of emails from the Gmail spam folder with minimal metadata.
 🔹 list_my_drive_files(limit: int = 10)
 Returns a list of recent files in the user's Google Drive, including ID, name, MIME type, and last modified time.
 
+
 🔹 read_file_content(file_id: str)
 Reads and extracts text from a file in Drive. Supports:
 
