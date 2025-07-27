@@ -31,6 +31,14 @@ A unified FastMCP-powered agent that connects **Gmail**, **Google Drive**, and *
 3. Choose **"Desktop App"** or **"Web App"**
 4. Download the **`client_creds.json`** file
 
+## 🔐 Authentication Info (One-time Manual, Then Persistent)
+
+- The **first time** you run the server, a **browser window will open** asking you to log in and authorize access.
+- After successful login, a `token.json` file will be created automatically in your local directory.
+- This file contains your OAuth access/refresh token and is reused for future runs.
+- You won’t need to re-authenticate unless the token expires or is deleted.
+   
+
 > ⚠️ _No need to publish the app — keeping it in testing mode is fine as long as the user is whitelisted._
 
 ---
