@@ -64,3 +64,39 @@ Add this block to your `msp.json` or equivalent MCP config to run the main serve
         ]
       }
 }
+
+🧰 Available Tools (Exposed via FastMCP)
+These tools are registered with FastMCP and can be used directly by your copilot system or any agent pipeline.
+
+📬 Gmail Tools
+🔹 get_unread_emails(limit: int = 5)
+Returns a list of unread emails from the user's inbox with metadata like subject, sender, and snippet. Automatically marks them as read.
+
+🔹 read_email(email_id: str)
+Reads and decodes the full plain-text body of a specific email by its ID.
+
+🔹 get_read_emails(limit: int = 50)
+Fetches recently read (non-unread) emails from the inbox.
+
+🔹 get_spam_emails(limit: int = 20)
+Retrieves a list of emails from the Gmail spam folder with minimal metadata.
+
+📂 Google Drive Tools
+🔹 list_my_drive_files(limit: int = 10)
+Returns a list of recent files in the user's Google Drive, including ID, name, MIME type, and last modified time.
+
+🔹 read_file_content(file_id: str)
+Reads and extracts text from a file in Drive. Supports:
+
+Google Docs (exported as plain text)
+
+Plain .txt files
+
+PDFs (parsed using PyPDF2)
+
+🏫 Google Classroom Tool
+🔹 list_courses()
+Fetches the list of enrolled Google Classroom courses (read-only).
+
+Each tool can be invoked via MCP runtime or LLM-powered interfaces. This setup enables rich, context-aware workflows that interact with the user's real data.
+
